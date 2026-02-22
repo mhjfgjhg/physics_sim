@@ -7,6 +7,16 @@ A set of training mathematical models for physical problems. Developed for the p
 ### Lorenz Attractor
 A 3D simulation Lorenz sysem "Butterfly Effect"
 On the *Euler method* and *Runge-Kutti*
+
+The system is composed of three ordinary differential equations:
+$$
+\begin{aligned}
+\frac{dx}{dt} &= \sigma(y - x) \\
+\frac{dy}{dt} &= x(\rho - z) - y \\
+\frac{dz}{dt} &= xy - \beta z
+\end{aligned}
+$$
+
 <img width="941" height="985" alt="lorenz" src="https://github.com/user-attachments/assets/3f2c034e-5a6a-4193-8ac7-4376087ae0b0" />
 
 ### Predator-Prey Dynamics
@@ -17,6 +27,16 @@ On the *Runge-Kutti*
 ### SIRS/SIRD Epidemic Models
 Epidemic models whis immunity, quarantine, death
 On the *Euler method*
+
+$$
+\begin{aligned}
+\frac{dS}{dt} &= -\frac{\beta S I}{N} + \xi R \\
+\frac{dI}{dt} &= \frac{\beta S I}{N} - \gamma I - \mu I \\
+\frac{dR}{dt} &= \gamma I - \xi R \\
+\frac{dD}{dt} &= \mu I
+\end{aligned}
+$$
+
 <img width="941" height="985" alt="SIRS-D" src="https://github.com/user-attachments/assets/47c4f0b4-bc19-4bf0-9edd-b52f86fc24d7" />
 
 ### Parashute Jump Simulation
