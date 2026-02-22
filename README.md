@@ -7,18 +7,22 @@ A set of training mathematical models for physical problems. Developed for the p
 ### Lorenz Attractor
 A 3D simulation Lorenz sysem "Butterfly Effect"
 On the *Euler method* and *Runge-Kutti*
+<img width="941" height="985" alt="lorenz" src="https://github.com/user-attachments/assets/3f2c034e-5a6a-4193-8ac7-4376087ae0b0" />
 
 ### Predator-Prey Dynamics
 Classic simple ecological model
 On the *Runge-Kutti*
+<img width="941" height="985" alt="Predator-Prey" src="https://github.com/user-attachments/assets/617af8d5-eb7a-4b83-b1e4-b11dda0d30cf" />
 
 ### SIRS/SIRD Epidemic Models
 Epidemic models whis immunity, quarantine, death
 On the *Euler method*
+<img width="941" height="985" alt="SIRS-D" src="https://github.com/user-attachments/assets/47c4f0b4-bc19-4bf0-9edd-b52f86fc24d7" />
 
 ### Parashute Jump Simulation
 A base physical model of free fall with gynamic drag coef
 On the *Euler method*
+<img width="941" height="985" alt="parashute" src="https://github.com/user-attachments/assets/c8d94027-86c5-474d-a608-6537fac7216c" />
 
 ## Tech Stack
 - Language: Python 3.12+
