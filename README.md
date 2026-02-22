@@ -54,7 +54,7 @@ On the *Euler method*
 ## Quick Start
 If you have uv installed, simply run:
 ```bash
-git clone [https://github.com/mhjfgjhg/physics_sym.git](https://github.com/mhjfgjhg/physics_sym.git)
+git clone [https://github.com/mhjfgjhg/physics_sim.git](https://github.com/mhjfgjhg/physics_sim.git)
 cd physics_sim
 uv sync
 uv run main.py
