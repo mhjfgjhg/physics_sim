@@ -1,6 +1,6 @@
 # Physics Mathematical Simulation
 
-A set of training mathematical models for physical problems. Developed for the purpose of in-depth study of differential equations and mathematical modeling using the example of physical problems. Designed on/for Arch-like Linux systems.
+A set of training mathematical models for physical problems. Developed for the purpose of in-depth study of differential equations and mathematical modeling using the example of physical problems.
 
 ## Phisics Models
 
@@ -50,11 +50,14 @@ On the *Euler method*
 - Environment: Managed via uv (Fast Python package manager)
 - Libraries: NumPy, SciPy, Matplotlib
 - OS: Arch Linux
+- Tested on: Arch, Debian
 
 ## Quick Start
 If you have uv installed, simply run:
 ```bash
-git clone [https://github.com/mhjfgjhg/physics_sim.git](https://github.com/mhjfgjhg/physics_sim.git)
+git clone https://github.com/mhjfgjhg/physics_sim.git
 cd physics_sim
-uv sync
-uv run main.py
+puthon3 main.py
+# Or through uv
+#uv sync
+#uv run main.py
