@@ -53,7 +53,7 @@ On the *Euler method*
 - Tested on: Arch, Debian
 
 ## Quick Start
-If you have uv installed, simply run:
+Simply run (python or uv):
 ```bash
 git clone https://github.com/mhjfgjhg/physics_sim.git
 cd physics_sim
