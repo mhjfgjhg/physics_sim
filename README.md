@@ -46,7 +46,7 @@ On the *Euler method*
 <img width="941" height="985" alt="parashute" src="https://github.com/user-attachments/assets/c8d94027-86c5-474d-a608-6537fac7216c" />
 
 ## Tech Stack
-- Language: Python 3.12+
+- Language: Python 3+
 - Environment: Managed via uv (Fast Python package manager)
 - Libraries: NumPy, SciPy, Matplotlib
 - OS: Arch Linux

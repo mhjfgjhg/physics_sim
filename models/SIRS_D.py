@@ -10,6 +10,8 @@ def run_simulation():
         ksi=0.1
         mu=0.005
         t_kar=20
+        t_outkar=80
+        dt_kar=5
         dt=0.01
         t_max=100
         S=[N-1]
@@ -21,10 +23,14 @@ def run_simulation():
         for _ in time_steps[:-1]:
             if _ <t_kar:
                 beta = beta_norm
-            elif _ >t_kar and _<t_kar+5:
-                beta = beta_norm+((beta_karantin-beta_norm)/5) * (_-t_kar)
-            else:
+            elif _ >t_kar and _<t_kar+dt_kar:
+                beta = beta_norm+((beta_karantin-beta_norm)/dt_kar) * (_-t_kar)
+            elif _>t_kar+dt_kar and _<t_outkar:
                 beta = beta_karantin
+            elif _>=t_outkar and _<=t_outkar+dt_kar:
+                beta = beta_karantin+((beta_norm-beta_karantin)/dt_kar) * (_-t_outkar)
+            else:
+                beta = beta_norm
 
             s_curr = S[-1]
             i_curr = I[-1]
@@ -46,6 +52,9 @@ def run_simulation():
         plt.plot(time_steps, I, label='Больные I', color='red')
         plt.plot(time_steps, R, label='Выздоровевшие R', color='green')
         plt.plot(time_steps, D, label='Умершие D', color='black')
+        plt.axvline(x=t_kar, color='g', linestyle='--', label='Карантин')
+        plt.axvline(x=t_outkar, color='r', linestyle='--', label='Карантин')
+
         #plt.plot(S,I)
         plt.title("Модель пандемии SIR")
         #plt.xlabel("Здоровые")
